@@ -1,0 +1,169 @@
+
+
+.generalContainer {
+  
+  .layoutContainer {
+      padding: 0;
+      width: 100%;
+      min-height: 100vh;
+      background: #FEBD2D 0% 0% no-repeat padding-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    
+      .navbarContainer {
+          .navbarHeader {
+              background-color: #ffffff;
+          }
+          
+      }
+      .bodyContainer {
+          width: 100%;
+          min-width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 5%;
+          .views-container {
+              display: flex;
+              min-height: 100%;
+              height: inherit;
+              align-items: center;
+              justify-content: center;
+              padding: 2%;
+          }
+      }
+      .footer {
+          width: 100%;
+          height: 55px;
+          background-color: #ffffff;
+          border: 1px solid var(--bg-primary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .falabellaCopyright {
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              span {
+                  margin: 0 1%;
+                  color: var(--warm-grey);
+              }
+              .footerTextContent{
+                  display: flex;
+                  justify-content: flex-end;
+                  padding: 0;
+                  &.copyright-content{
+                      justify-content: flex-start;
+                  }
+              }
+              h6 {
+                  margin: 0;
+              }
+          }
+      }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .menu-container {
+      padding: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .general-container {
+      .layout-container {
+          .navbar-container {
+              .logo-mobile-header {
+                  display: flex;
+                  height: 40px;
+              }
+              .d-inline-block.dropdown-header-desktop.dropdown.nav-item, .dropdown-toggle.nav-link.dropdown-header-desktop, .dropdown-item, .navbar-nav .dropdown-menu  {
+                  display: none !important;
+              }
+              .accordion-menu-mobile {
+                  display: block;
+                  margin-top: 3%;
+                  .navbar-nav {
+                      margin-top: 4%;
+                      
+                  }
+                  .nav-item {
+                      color: #ffffff;
+                      display: flex;
+                      align-items: flex-end;                        
+                      div {
+                          padding-bottom: 1px;
+                      }             
+                  }
+                  .btn-toggle-accordion {
+                      display: flex;
+                      align-items: flex-end;
+                      div {
+                          padding-bottom: 1px;
+                      }
+                  }
+                  button {
+                      color: #ffffff;
+                      padding: 0;
+                      text-decoration: none;
+                      &:focus {
+                          box-shadow: none;
+                          outline: none;
+                      }
+                      &:hover {
+                          color: var(--falabella-green);
+                      }                
+                  }
+                  .accordion-profile {
+                      font-size: 14px;
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+                      width: 100%;
+                      color: #ffffff;
+                      .profile-img-container {
+                          padding-left: 1%;
+                          display: flex;
+                          width: fit-content;
+                          img {
+                              width: 15px;
+                              padding: 1px;
+                          }
+                      }
+                      .profile-text-container {
+                          width: fit-content;
+                          padding: 1% 0 0 1%;
+                          text-align: start;
+                      }
+                  }
+                  ul.accordion {
+                      list-style: none;
+                      margin-left: 8%;
+                      color: #ffffff;
+                  }
+              }   
+          }
+      }
+      
+      .menu-container {
+          display: none;
+      }
+      
+      
+      .layout-container {            
+          .navbar-container {
+              .navbar-header {
+                  background-color: var(--black-menu);
+              }
+          }
+      }  
+      
+  }
+}
+
+
+

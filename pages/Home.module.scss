@@ -1,0 +1,20 @@
+
+.cardMovie {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    height: 530px;
+    width: 700px;
+    background-color: #ffffff;
+}
+
+.cardChat {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    height: 700px;
+    width: 300px;
+    margin-left: 15%;
+    background-color: #ffffff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
